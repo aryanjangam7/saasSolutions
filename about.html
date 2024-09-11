@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SaaS Solutions</title>
+    <meta name="description"
+        content="We provide the best Travel SaaS services to improve your business productivity and satisfaction of customers" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="saas solutions logo" width="50" height="">
+                <span class="fs-3 fw-bold">SaaS Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- about us section start -->
+    <section class="about_us">
+        <div class="container">
+            <h2 class="text-center fs-1 mb-5 pb-3 mt-5">About Us</h2>
+            <div class="row">
+                <div class="col-lg-6 col-12" data-aos="fade-right">
+                    <h4>Our Story</h4>
+                    <p>As a team at SaaS Solutions, we are focused on providing organisations in the travel industry
+                        with innovative software solutions that will hasten business advancements and revolutionalise
+                        operations and customers satisfaction. With out modern SaaS tools we provide a complete range of
+                        services specialized to travel agencies, tour operators, and hospitality providers that will
+                        enable them to manage their bookings and workflows more effectively while analyzing the crucial
+                        data for their business.
+                    </p>
+                    <p>We are a team of driven innovators and industry specialists and we are creating, easy to use,
+                        efficient and adaptable solutions tailored to every individual travel-related enterprise.
+                        Perhaps you require a better and easier way of booking, enhancing customers’ relations or making
+                        superior analytics of you bookings and sales, then welcome to TravelTech Solution – your guide
+                        through this intricate world of travel.</p>
+                    <p>It is our purpose to help online travel businesses of various types to succeed, while maintaining
+                        innovation, stability and customers’ needs as our top priorities.</p>
+                </div>
+                <div class="col-lg-6 col-12" data-aos="fade-left">
+                    <div class="about_img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us section end -->
+
+    <!-- about us tab section start -->
+    <section class="tab_section about_tab">
+        <div class="container">
+            <h2 class="text-center fs-1 mb-5 pb-3" data-aos="fade-up">Our Team</h2>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="row nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist"
+                        data-aos="fade-up">
+                        <li class="col-md-3 col-12 nav-item text-center mb-3" role="presentation">
+                            <button class="nav-link fw-semibold w-100 h-100 active" id="pills-all-tab" type="button"
+                                role="tab" aria-selected="true" onclick="filterTeam('all', this)">All</button>
+                        </li>
+                        <li class="col-md-3 col-12 nav-item text-center mb-3" role="presentation">
+                            <button class="nav-link fw-semibold w-100 h-100" id="pills-management-tab" type="button"
+                                role="tab" aria-selected="false"
+                                onclick="filterTeam('management', this)">Management</button>
+                        </li>
+                        <li class="col-md-3 col-12 nav-item text-center mb-3" role="presentation">
+                            <button class="nav-link fw-semibold w-100 h-100" id="pills-development-tab" type="button"
+                                role="tab" aria-selected="false"
+                                onclick="filterTeam('development', this)">Development</button>
+                        </li>
+                        <li class="col-md-3 col-12 nav-item text-center mb-3" role="presentation">
+                            <button class="nav-link fw-semibold w-100 h-100" id="pills-design-tab" type="button"
+                                role="tab" aria-selected="false" onclick="filterTeam('design', this)">Design</button>
+                        </li>
+                    </ul>
+                    <div class="row" id="team-members" data-aos="zoom-in">
+                        <!-- Team Members -->
+                        <div class="col-md-4 col-12 team-member" data-category="management">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team1.jpg" alt="Team Member 1" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 1</h5>
+                                    <p>Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 team-member" data-category="development">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team2.jpg" alt="Team Member 2" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 2</h5>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 team-member" data-category="management">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team3.jpg" alt="Team Member 3" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 3</h5>
+                                    <p>Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 team-member" data-category="design">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team4.jpg" alt="Team Member 4" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 4</h5>
+                                    <p>Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 team-member" data-category="development">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team5.jpg" alt="Team Member 5" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 5</h5>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 team-member" data-category="design">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/team6.jpeg" alt="Team Member 6" class="w-50 rounded-circle mb-4">
+                                    <h5>Team Member 6</h5>
+                                    <p>Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us tab section end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between" data-aos="zoom-in">
+                <div class="col-lg-4 col-sm-12 mb-4">
+                    <h3 class="mb-4">About Us</h3>
+                    <p>TISS helps travel businesses in leveraging cloud solutions for bookings and operations, creating
+                        superior customers’ experiences.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <h3 class="mb-4">Quicks Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <h3 class="mb-4">Contact Us</h3>
+                    <ul>
+                        <li>Email : <a href="mailto:info@example.com">info@example.com</a></li>
+                        <li>Phone : <a href="tel:(123) 456-7890">(123) 456-7890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
