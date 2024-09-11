@@ -358,7 +358,20 @@
     <script>
         AOS.init();
     </script>
-    <script src="main.js"></script>
+    <script src="main.js">
+        function validateEmail() {
+            const emailField = document.getElementById('inputemail').value;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (emailPattern.test(emailField)) {
+                alert("Successfully submitted!");
+                return true;
+            } else {
+                alert("Invalid email address! Please enter a valid one.");
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
