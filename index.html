@@ -241,8 +241,8 @@
                 <div class="col-12" data-aos="zoom-in">
                     <h2 class="text-center text-light fs-1 mb-5 pb-3">Subscribe to Our Newsletter</h2>
                     <p class="text-center">Stay updated with our latest news and offers</p>
-                    <form class="row g-3 justify-content-center mt-2" onsubmit="return validateEmail()"
-                        action="thankyou.html" method="post">
+                    <form id="newsletter_form" class="row g-3 justify-content-center mt-2" action="thankyou.html"
+                        method="post">
                         <div class="col-md-5 col-12">
                             <label for="inputemail" class="visually-hidden">Email</label>
                             <input type="email" class="form-control" id="inputemail" required
@@ -357,6 +357,25 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        document.getElementById('newsletter_form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const emailField = document.getElementById('inputemail').value;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (emailPattern.test(emailField)) {
+                alert("Successfully submitted!");
+                // return true;
+                window.location.href = 'thankyou.html';
+            } else {
+                alert("Invalid email address! Please enter a valid one.");
+                return false;
+            }
+
+        });
+
     </script>
     <script src="main.js"></script>
 </body>
