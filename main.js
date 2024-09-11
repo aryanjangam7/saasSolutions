@@ -49,18 +49,19 @@ var swiper2 = new Swiper(".mySwiper2", {
 // testimonials section end
 
 // Newsletter start
-// function validateEmail() {
-//     const emailField = document.getElementById('inputemail').value;
-//     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+function validateEmail() {
+    const emailField = document.getElementById('inputemail').value;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-//     if (emailPattern.test(emailField)) {
-//         alert("Successfully submitted!");
-//         return true;
-//     } else {
-//         alert("Invalid email address! Please enter a valid one.");
-//         return false;
-//     }
-// }
+    if (emailPattern.test(emailField)) {
+        alert("Successfully submitted!");
+        // return true;
+        window.location.href = 'thankyou.html';
+    } else {
+        alert("Invalid email address! Please enter a valid one.");
+        return false;
+    }
+}
 // Newsletter end
 
 
